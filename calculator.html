@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
+    <title>Currency Converter</title>
+</head>
+<body>
+    <header>
+        <h1>Currency Converter</h1>
+    </header>
+    <nav> <p>Choose a currency conversion type and use the calculator below easily to perform the conversion.
+        </p>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+		  <li><a href="conversion.html">Conversion Information</a></li>
+          <li><a href="calculator.html">Currency Converter</a></li>
+        </ul>
+    </nav>
+    <section>
+		<p>Select currency conversion type , enter the value, and get the result with easy way!</p>
+			<label for="conversionType">Select Conversion Type:</label>
+			<select id="conversionType">
+				<option value="usdToEuro">USD to Euro</option>
+				<option value="euroToUsd">Euro to USD</option>
+				<option value="usdToMYR">USD to MYR</option>
+				<option value="myrToUsd">MYR to USD</option>
+				<option value="usdToSGD">USD to SGD</option>
+				<option value="sgdToUsd">SGD to USD</option>
+				<option value="idrToMYR">IDR to MYR</option>
+				<option value="myrToIDR">MYR to IDR</option>
+				<option value="thbToMYR">THB to MYR</option>
+				<option value="myrToTHB">MYR to THB</option>
+			</select>
+
+        <label for="inputValue">Enter Value:</label>
+        <input type="number" id="inputValue">
+       	<button onclick="performConversion()">Calculate</button>
+        <p id="result"></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 [nik farhana]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
